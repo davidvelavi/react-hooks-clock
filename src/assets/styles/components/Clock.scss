@@ -1,0 +1,82 @@
+.clock{
+    background-color: #E8CAAF;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 1rem #EEE0B7;
+    height: 40rem;
+    position: relative;
+    width: 40rem;
+}
+
+.clock .base{
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.clock .base:nth-child(1){
+    font-size: 2rem;
+}
+
+.clock .base:nth-child(2){
+    color:red;
+    transform: rotate(30deg);
+}
+
+.clock .base:nth-child(2) .hour{
+    transform: rotate(-30deg);
+}
+
+.clock .base:nth-child(3){
+    color:red;
+    transform: rotate(60deg);
+}
+.clock .base:nth-child(3) .hour{
+    transform: rotate(-60deg);
+}
+.clock .center{
+    background-color: #000000;
+    border-radius: 0.5rem;
+    bottom: 0;
+    height: 3rem;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 3rem;
+}
+
+.clock .center.cover{
+    z-index: 1;
+}
+
+.clock .hand{
+    background-color: #fff;
+    bottom: 1.5rem;
+    border-radius: 0.4rem;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    transform-origin: bottom;
+}
+.clock  .hand.hour-hand{
+    height: 9rem;
+    transform: rotateZ(21deg);
+    width: 1.4rem; 
+}
+
+.clock  .hand.minute-hand{
+    height: 15rem;
+    transform: rotateZ(0deg);
+    width: 1rem;
+}
+
+.clock  .hand.second-hand{
+    background-color: red;
+    height: 15rem;
+    transform: rotateZ(90deg);
+    width: 0.5rem;
+}
